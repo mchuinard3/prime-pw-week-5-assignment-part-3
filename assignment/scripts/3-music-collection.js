@@ -1,1 +1,40 @@
 console.log('***** Music Collection *****')
+let collection = [];
+function addToCollection(title, artist, yearPublished) {
+  let album = {
+    title: title,
+    artist: artist,
+    yearPublished: yearPublished
+  }
+  collection.push(album);
+  return album;
+}
+console.log(addToCollection('Feels Like Today', 'Rascal Flatts', '2004'));
+console.log(addToCollection('Dig Your Roots', 'Florida Georgia Line', '2016'));
+console.log(addToCollection('Take Care', 'Drake', '2018'));
+console.log(addToCollection('Me and My Gang', 'Rascal Flatts', '2006'));
+console.log(addToCollection('Live Like You Were Dying', 'Tim McGraw', '2004'));
+console.log(addToCollection('Red', 'Taylor Swift', '2012'));
+console.log(collection);
+
+function showCollection(array) {
+console.log('The number of albums in my collection is:', array.length);
+for (let i = 0; i < array.length; i++) {
+console.log(`${array[i].title} by ${array[i].artist} published in ${array[i].yearPublished}`);
+  }
+}
+showCollection(collection);
+
+function findByArtist(artist) {
+let artistResults = [];
+for (let i = 0; i < collection.length; i++) {
+if (artist === collection[i].artist) {
+  artistResults.push(collection[i].artist);
+  return artistResults;
+  }
+  return [];
+}
+}
+console.log(findByArtist('Rascal Flatts'));
+console.log(findByArtist('T-Pain'));
+console.log(collection[i]);
