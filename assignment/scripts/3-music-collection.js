@@ -36,5 +36,4 @@ for (let i = 0; i < collection.length; i++) {
   }
 console.log(findByArtist('Florida Georgia Line'));
 console.log(findByArtist('T-Pain'));
-findByArtist('Florida Georgia Line');
-findByArtist('T-Pain');
+console.log(findByArtist('Rascal Flatts'));
