@@ -28,13 +28,13 @@ showCollection(collection);
 function findByArtist(artist) {
 let artistResults = [];
 for (let i = 0; i < collection.length; i++) {
-if (artist === collection[i].artist) {
+  if (artist === collection[i].artist) {
   artistResults.push(collection[i].artist);
+}
+}
   return artistResults;
   }
-  return [];
-}
-}
-console.log(findByArtist('Rascal Flatts'));
+console.log(findByArtist('Florida Georgia Line'));
 console.log(findByArtist('T-Pain'));
-console.log(collection[i]);
+findByArtist('Florida Georgia Line');
+findByArtist('T-Pain');
