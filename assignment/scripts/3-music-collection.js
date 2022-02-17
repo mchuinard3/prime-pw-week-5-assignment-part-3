@@ -29,7 +29,7 @@ function findByArtist(artist) {
 let artistResults = [];
 for (let i = 0; i < collection.length; i++) {
   if (artist === collection[i].artist) {
-  artistResults.push(collection[i].artist);
+  artistResults.push(collection[i]);
 }
 }
   return artistResults;
